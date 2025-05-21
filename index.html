@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Cardzilla - Epic Game Cards</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Cardzilla</h1>
+    <nav>
+      <a href="#products">Cards</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Unleash the Power of Cards</h2>
+    <p>Epic. Collectible. Legendary.</p>
+    <button onclick="scrollToSection('products')">Shop Now</button>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Cards</h2>
+    <div class="card-grid">
+      <div class="card" onclick="showCard('Dragon Fury')">
+        <img src="https://via.placeholder.com/200x300?text=Dragon+Fury" alt="Dragon Fury" />
+        <h3>Dragon Fury</h3>
+      </div>
+      <div class="card" onclick="showCard('Shadow Knight')">
+        <img src="https://via.placeholder.com/200x300?text=Shadow+Knight" alt="Shadow Knight" />
+        <h3>Shadow Knight</h3>
+      </div>
+      <div class="card" onclick="showCard('Crystal Guardian')">
+        <img src="https://via.placeholder.com/200x300?text=Crystal+Guardian" alt="Crystal Guardian" />
+        <h3>Crystal Guardian</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Cardzilla</h2>
+    <p>At Cardzilla, we craft collectible cards that ignite imagination. Whether you're a duelist, collector, or adventurer, our cards are made for thrill-seekers and strategists alike.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h3 id="popupTitle"></h3>
+      <p>This card is part of the elite series! Stay tuned for more.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cardzilla. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
