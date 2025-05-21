@@ -45,11 +45,13 @@ function sendInquiry() {
     const socialIcons = document.createElement('div');
     socialIcons.className = 'social-icons';
     socialIcons.innerHTML = `
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-discord"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    `;
+      <a href="https://www.facebook.com/CardzillaCollectibles" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/cardzillacollectibles/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+`;
+
     footer.insertBefore(socialIcons, footer.firstChild);
   });

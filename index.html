@@ -52,11 +52,26 @@
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+      <input type="text" id="name" placeholder="Your Name" required />
+<input type="email" id="email" placeholder="Your Email" required />
+<textarea id="message" placeholder="Your Message" required></textarea>
+<button onclick="openGmail()">Send</button>
+
+<script>
+  function openGmail() {
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent("Message from Website");
+    const body = encodeURIComponent(message);
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=cardtoonincca@gmail.com&su=${subject}&body=${body}`;
+
+    window.open(gmailUrl, '_blank');
+  }
+</script>
+
+</form>
+
   </section>
 
   <div id="popup" class="popup hidden">
@@ -68,16 +83,12 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Cardzilla. All rights reserved.</p>
+    <p>&copy; 23840 Crenshaw Blvd, Torrance, CA 90505</p>
+     <p>&copy; 2025 Cardzilla. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
-<form onsubmit="sendInquiry(); return false;">
-  <input type="text" placeholder="Your Name" required />
-  <input type="email" id="email" placeholder="Your Email" required />
-  <textarea placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+
 </body>
 </html>
 
