@@ -2,7 +2,17 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
   }
-  
+function sendInquiry() {
+    const email = document.getElementById("email").value;
+    if (!email) {
+        alert("Please enter your email before sending.");
+        return;
+    }
+
+    const gmailURL = `https://mail.google.com/mail/?view=cm&to=cardtoonincca@gmail.com&su=Inquiry&body=Hello, I would like to inquire about ..... `;
+    window.open(gmailURL, '_blank');
+}
+
   function showCard(cardName) {
     const popup = document.getElementById('popup');
     const popupTitle = document.getElementById('popupTitle');
