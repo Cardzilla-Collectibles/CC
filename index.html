@@ -72,19 +72,12 @@
   </footer>
 
   <script src="script.js"></script>
- <script>
-        function sendInquiry() {
-            const email = document.getElementById("email").value;
-            if (!email) {
-                alert("Please enter your email before sending.");
-                return;
-            }
-
-            // Open Gmail in a new tab with a blank email draft
-            const gmailURL = `https://mail.google.com/mail/?view=cm&to=cardtoonincca@gmail.com&su=Inquiry&body=Hello, I would like to inquire about ..... `;
-            window.open(gmailURL, '_blank');
-        }
-    </script>
+<form onsubmit="sendInquiry(); return false;">
+  <input type="text" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Your Email" required />
+  <textarea placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
 </body>
 </html>
 
