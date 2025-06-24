@@ -51,12 +51,14 @@
   }
   
   .hero {
-    background: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nonYKHIX6Ml9dPpxip-2o3HbcsBJ0v5Wv9tUP5ytJSvudj7lrWKd_zihJX9POF8fFcTV432UdyeqTWddCc_aL_-X2DuCuLoML6-tVIGdttAX3sCEakjWSsD1NmzaeKeykhNkG2G=s1360-w1360-h1020-rw) center/cover;
-    color: white;
-    padding: 8rem 2rem;
-    text-align: center;
-    position: relative;
-  }
+  background: url(https://s3-media0.fl.yelpcdn.com/bphoto/Rl0t_hWE1cp344PVM7PlJA/348s.jpg) center no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
   
   .hero::before {
     content: '';
